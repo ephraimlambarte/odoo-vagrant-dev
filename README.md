@@ -14,10 +14,12 @@ https://github.com/odoo
 Make sure you have Vagrant in your machine (visit https://www.vagrantup.com/)
 
 Step 1: run vagrant (it may take few minutes)
-`$ vagrant up`
+
+    $ vagrant up
 
 Step 2: ssh vagrant
-`$ vagrant ssh`
+
+    $ vagrant ssh
 
 Step 3: open web browser
 http://localhost:8069
@@ -30,13 +32,15 @@ There are two default passwords supplied in this repo that you should update bef
 2. Update the conf/odoo.conf file to reflect the new PostgreSQL password.  Also update the Odoo Database Master Password which is set in this file.
 
 ## Running Odoo ##
-`$ python /vagrant/odoo/odoo-bin -c /vagrant/conf/odoo.conf`
-or 
-`$ python /vagrant/odoo/odoo-bin -c /vagrant/conf/odoo.conf -d test_db`
+    
+    $ python /vagrant/odoo/odoo-bin -c /vagrant/conf/odoo.conf
+    or 
+    $ python /vagrant/odoo/odoo-bin -c /vagrant/conf/odoo.conf -d test_db
 
 ## Creating your first Module ##
-`$ python /vagrant/odoo/odoo-bin scaffold module_name /vagrant/odoo_modules`
+    
+    $ python /vagrant/odoo/odoo-bin scaffold module_name /vagrant/odoo_modules
 
-Special Thanks:
-https://github.com/JamesGreenAU/OdooVagrant
+Special Thanks: <br />
+https://github.com/JamesGreenAU/OdooVagrant <br />
 https://github.com/Yenthe666/InstallScript
